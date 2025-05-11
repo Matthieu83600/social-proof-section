@@ -1,3 +1,97 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+  --font-family: "League Spartant", sans-serif;
+  --font-size: 15px;
+  --font-regular: 400;
+  --font-extra-regular: 500;
+  --font-bold: 700;
+}
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-regular);
+  background-color: var(--white);
+  background-image: url("./images/bg-pattern-top-desktop.svg"), url("./images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top -1px left -1px, bottom -440px right 0px;
+}
+main {
+  margin-inline: 165px;
+}
+.hero {
+  display: flex;
+  margin-block-start: 118px;
+  margin-block-end: 71px;
+  gap: 125px;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 445px;
+}
+.hero__content h1 {
+  color: var(--very-dark-magenta);
+  font-size: 56px;
+  font-weight: var(--font-bold);
+  line-height: 48px;
+  letter-spacing: -2px;
+}
+.hero__content p {
+  color: var(--dark-grayish-magenta);
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: -0.63px;
+}
+.hero__stars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hero__stars-card {
+  background-color: var(--light-grayish-magenta);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 445px;
+  height: 56px;
+  position: relative;
+}
+.hero__stars-card div {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  gap: 8.35px;
+}
+.hero__stars-card p {
+  margin-left: 32.45px;
+  color: var(--very-dark-magenta);
+  font-size: 17px;
+  font-weight: var(--font-bold);
+}
+.reviews {
+  top: 16px;
+}
+.report {
+  top: 20px;
+  left: 48px;
+}
+.tech {
+  top: 26px;
+  left: 95px;
+}
 .attribution {
   font-size: 13px;
   text-align: center;
