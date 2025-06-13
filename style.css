@@ -148,3 +148,45 @@ main {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .hero__content {
+    max-width: 1000px !important;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    background-image: url("./images/bg-pattern-top-mobile.svg"), url("./images/bg-pattern-bottom-mobile.svg");
+  }
+  main {
+    margin-inline: 24px;
+  }
+  .hero {
+    margin-block-start: 82px;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__stars-card {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 78px;
+    width: 327px;
+  }
+  .reviews {
+    top: 0;
+  }
+  .report {
+    top: 0;
+    left: 0;
+  }
+  .tech {
+    top: 0;
+    left: 0;
+  }
+  .testimonials {
+    flex-direction: column;
+  }
+}
